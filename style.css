@@ -1,0 +1,190 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+:root {
+    --bs:0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.125em rgba(0, 0, 0, 0.15);
+}
+
+/* styling the navigation bar */
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+#nav #btn {
+    margin-right: 20px;
+}
+
+#nav a {
+    margin-right: 20px;
+}
+
+.toplink {
+    color: black;
+    margin-top: 6px;
+}
+
+#btn {
+    width: 60px;
+    height: 25px;
+    background: lightblue;
+    border: 1px solid #fff;
+    outline: 0;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.topApp {
+    margin-top: 6px;
+}
+
+#btn:hover {
+    opacity: 0.85;
+    transition: 0.75s ease-in-out;
+    box-shadow: var(--bs);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* styling the logo section */
+
+#middle {
+    margin-top: 200px;
+    position: relative;
+} 
+
+
+
+
+/* styling the logo section */
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo .logo {
+    width: 500px;
+}
+.searchbarContainer .searchSection {
+    display: flex;
+    width: 580px;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    margin-top: 45px;
+    border-radius: 20px;
+}
+
+.searchbarContainer #searchbar {
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.searchbarContainer .search {
+    width: 40px;
+    border: 1px solid #fff;
+    background:  #fff;
+    border-right: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    color: #c4c4c4;
+}
+
+.searchbarContainer .mic {
+    width: 40px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-left: none;
+    outline: none;
+    border-radius: 0 20px 20px 0;
+    color: #c4c4c4;
+}
+
+.searchSection:hover {
+    box-shadow: var(--bs);
+}
+
+.searchbarContainer .mic:hover {
+    color: #000000;
+    transition: 0.75s;
+}
+
+/* styling the buttons */
+
+#button {
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+
+
+.btn {
+    margin-right: 10px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: poiner;
+    border: 1px solid #c4c4c4;
+    outline: 0;
+    background: ivory;
+    color: gray;
+}
+
+.btn:hover {
+    color: black;
+    box-shadow: var(--bs);
+} 
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#links {
+    margin-right: 5px;
+    margin-left: 5px;
+} 
+
+/* media query */
+
+@media (max-width:600px){
+    #nav {
+        margin-right: 20px;
+    }
+    #middle {
+        margin-top: 150px
+    }
+    #logo .logo {
+        width: 350px;
+    }
+    .searchbarContainer .searchSection{
+        width: 85%;
+        margin-top: 30px;
+    }
+
+}
+
